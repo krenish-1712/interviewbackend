@@ -5,11 +5,10 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors')
 
-let mongoose = require('mongoose')
-
-mongoose.connect('mongodb://127.0.0.1:27017/interview')
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://krenish:wDo6uzDYLb0HO313@pandya.f24t8.mongodb.net/?retryWrites=true&w=majority&appName=PANDYA')
   .then(() => console.log('Connected!'))
-   .catch(err => console.log('Error connecting'));
+  .catch(err => console.log('Error connecting'));
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
