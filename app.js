@@ -6,7 +6,7 @@ var logger = require('morgan');
 var cors = require('cors')
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://krenishh:zpbDvLRPAxGutYKc@pandya.f24t8.mongodb.net/?retryWrites=true&w=majority&appName=PANDYA')
+mongoose.connect('mongodb+srv://pandya:v7JxrAeDul6ZJLMr@pandya.f24t8.mongodb.net/?retryWrites=true&w=majority&appName=PANDYA')
   .then(() => console.log('Connected!'))
   .catch(err => console.log('Error connecting'));
 
